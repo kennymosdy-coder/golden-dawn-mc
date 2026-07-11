@@ -1,114 +1,137 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0b1323" />
-  <meta name="description" content="Golden Dawn MC — established January 28, 2026 in Grapeseed." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1323">
+  <meta name="description" content="Official website of Golden Dawn MC, a fictional GTA roleplay motorcycle club founded in Grapeseed.">
   <title>Golden Dawn MC</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="paper-sky" aria-hidden="true">
-    <span class="star s1">★</span><span class="star s2">✦</span><span class="star s3">★</span>
+  <div class="sky" aria-hidden="true">
+    <span class="star s1">★</span><span class="star s2">★</span><span class="star s3">★</span>
     <span class="cloud c1"></span><span class="cloud c2"></span>
   </div>
 
   <header class="topbar">
-    <a class="brand" href="#home">
-      <span class="mini-sun">☀</span>
-      <span>GOLDEN DAWN MC</span>
-    </a>
-    <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="mainNav">MENU</button>
+    <a class="brand" href="#home"><span class="sun">☀</span><span>GOLDEN DAWN MC</span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">MENU</button>
     <nav id="mainNav" class="nav">
-      <a href="#about">ABOUT</a>
-      <a href="#history">HISTORY</a>
-      <a href="#roster">ROSTER</a>
+      <a href="#founder">FOUNDER</a>
+      <a href="#story">STORY</a>
       <a href="#recruitment">RECRUITMENT</a>
-      <a href="#gallery">GALLERY</a>
+      <a href="#archives">ARCHIVES</a>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="hero section">
-      <div class="hero-copy cardboard big-sign">
-        <div class="tape tape-left"></div><div class="tape tape-right"></div>
+    <section id="home" class="section hero">
+      <div class="cardboard hero-card">
         <p class="eyebrow">ORIGINALLY FOUNDED IN GRAPESEED</p>
-        <h1>GOLDEN DAWN <span>MC</span></h1>
+        <h1>GOLDEN DAWN<br>MC</h1>
         <p class="tagline">Ride into the night. Complain about the gas bill at sunrise.</p>
-        <div class="hero-meta">
+        <div class="facts">
           <span>EST. JAN 28, 2026</span>
           <span>GRAPESEED, SAN ANDREAS</span>
         </div>
         <a class="paper-button" href="#recruitment">JOIN OR DIE BORED</a>
       </div>
 
-      <div class="patch-frame">
-        <img src="assets/golden-dawn-patch.jpg" alt="Golden Dawn MC patch" />
+      <figure class="patch-frame">
+        <img src="golden-dawn-patch.jpg" alt="Golden Dawn Motorcycle Club patch">
+      </figure>
+    </section>
+
+    <section id="founder" class="section">
+      <div class="section-label">FOUNDER</div>
+      <article class="founder-card cardboard">
+        <div class="founder-photo-frame">
+          <img src="kenny-founder.jpg" alt="Kenny, founder and president of Golden Dawn MC">
+        </div>
+        <div class="founder-copy">
+          <p class="tiny-label">FOUNDER & PRESIDENT</p>
+          <h2>KENNY</h2>
+          <p>Kenny founded Golden Dawn MC in Grapeseed on January 28, 2026, after deciding every terrible idea deserved proper organization.</p>
+          <p>What began as a name, a patch, and unreasonable confidence became a club built around loyalty, brotherhood, roleplay, and memorable rides.</p>
+          <p class="quote">Officially responsible. Emotionally unavailable when the gas bill arrives.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="story" class="section">
+      <div class="section-label">THE ROAD SO FAR</div>
+      <div class="timeline">
+        <div class="date-strip">JAN 28, 2026</div>
+        <article class="story-card">
+          <h3>THE DAWN BREAKS</h3>
+          <p>Golden Dawn MC is established in Grapeseed.</p>
+        </article>
+
+        <div class="date-strip">2026</div>
+        <article class="story-card">
+          <h3>FIRST MILES</h3>
+          <p>The club begins recruiting, riding, and building an identity of its own.</p>
+        </article>
+
+        <div class="date-strip">NEXT</div>
+        <article class="story-card">
+          <h3>TO BE WRITTEN</h3>
+          <p>The next legendary ride, alliance, bad decision, or parking ticket goes here.</p>
+        </article>
       </div>
     </section>
 
-    <section id="about" class="section split">
-      <div class="cardboard panel crooked-left">
-        <h2>WHO WE ARE</h2>
-        <p id="aboutText">Golden Dawn MC is a GTA roleplay motorcycle club built around brotherhood, loyalty, storytelling, and the occasional terrible decision made with complete confidence.</p>
-        <p>We started in Grapeseed and carry a midnight-blue-and-beige identity inspired by dawn breaking through the dark.</p>
-      </div>
-      <aside class="sticky-note note-blue">
-        <strong>OFFICIAL CLUB POLICY</strong>
-        <p>No one knows what they are doing. Some are simply louder about it.</p>
-      </aside>
-    </section>
-
-    <section id="history" class="section">
-      <div class="wood-title"><h2>THE ROAD SO FAR</h2></div>
-      <div id="timeline" class="timeline"></div>
-    </section>
-
-    <section id="roster" class="section">
-      <div class="cardboard panel">
-        <h2>CLUB ROSTER</h2>
-        <p class="small-copy">Names can be changed in one file. No coding degree or wizard hat required.</p>
-        <div id="rosterGrid" class="roster-grid"></div>
+    <section id="recruitment" class="section">
+      <div class="section-label">RECRUITMENT</div>
+      <div class="recruit-grid">
+        <figure class="poster-frame">
+          <img src="recruitment-poster.jpg" alt="Golden Dawn MC recruitment poster">
+        </figure>
+        <article class="requirements cardboard">
+          <h2>APPLICATIONS</h2>
+          <p>Think you belong here? Send the official page a DM and ask for an application.</p>
+          <ul>
+            <li>PS5</li>
+            <li>Working microphone</li>
+            <li>Instagram and Discord</li>
+            <li>18+ only</li>
+            <li>Respect the chain of command</li>
+            <li>Be active and communicate</li>
+          </ul>
+          <a class="paper-button" href="https://www.instagram.com/" target="_blank" rel="noopener">DM US BEFORE WE CHANGE OUR MINDS</a>
+          <p class="small-note">Replace the Instagram link in <strong>index.html</strong> with your exact club username later.</p>
+        </article>
       </div>
     </section>
 
-    <section id="recruitment" class="section recruitment">
-      <div class="poster-wrap">
-        <img src="assets/recruitment-poster.jpg" alt="Golden Dawn MC recruitment poster" />
-      </div>
-      <div class="cardboard panel requirements">
-        <h2>RECRUITMENT</h2>
-        <p>Seeking riders with a mic, a PS5, Discord, Instagram, decent roleplay, and enough common sense to pretend this is organized.</p>
-        <ul>
-          <li>18+ only</li>
-          <li>Respect the chain of command</li>
-          <li>Be active and communicate</li>
-          <li>Bring personality, not drama</li>
-        </ul>
-        <a class="paper-button disabled" href="#" aria-disabled="true">APPLICATIONS COMING SOON</a>
-      </div>
-    </section>
-
-    <section id="gallery" class="section">
-      <div class="wood-title"><h2>CLUB ARCHIVES</h2></div>
-      <div id="galleryGrid" class="gallery-grid">
-        <figure class="polaroid"><img src="assets/recruitment-poster.jpg" alt="Recruitment poster"><figcaption>Recruitment went badly. We made a poster.</figcaption></figure>
-        <figure class="polaroid"><img src="assets/golden-dawn-patch.jpg" alt="Golden Dawn patch"><figcaption>The colors. The curse. The brand.</figcaption></figure>
-        <div class="polaroid placeholder"><span>YOUR NEXT<br>RIDE PHOTO</span><figcaption>Add screenshots anytime.</figcaption></div>
+    <section id="archives" class="section">
+      <div class="section-label">CLUB ARCHIVES</div>
+      <div class="archive-grid">
+        <figure class="polaroid">
+          <img src="recruitment-poster.jpg" alt="Recruitment poster">
+          <figcaption>Recruitment went badly. We made a poster.</figcaption>
+        </figure>
+        <figure class="polaroid">
+          <img src="golden-dawn-patch.jpg" alt="Golden Dawn patch">
+          <figcaption>The colors. The curse. The brand.</figcaption>
+        </figure>
+        <div class="polaroid placeholder">
+          <strong>YOUR NEXT<br>RIDE PHOTO</strong>
+          <span>Add screenshots anytime.</span>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>GOLDEN DAWN MC • EST. 2026 • GRAPESEED</p>
-    <p class="fine">A fictional GTA roleplay club. No actual gas tanks were emotionally supported.</p>
+    <strong>GOLDEN DAWN MC • EST. 2026 • GRAPESEED</strong>
+    <p>A fictional GTA roleplay club. No actual gas tanks were emotionally supported.</p>
   </footer>
 
-  <script src="content.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
